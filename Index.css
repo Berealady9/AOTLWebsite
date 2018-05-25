@@ -1,0 +1,291 @@
+body {
+    background-image: url("Galaxy.jpg");
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header-bar {
+    background: linear-gradient(to right,rgba(172, 80, 216, .4), rgba(88, 0, 157, .4), rgba(172, 80, 216, .4), rgba(160, 13, 173, .4),rgba(172, 80, 216, .4));
+    margin: .25em 0 0 0;
+    height: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3em;
+    text-shadow: rgba(218, 142, 255, .5) .1em .1em;
+    box-shadow: 0 0 1em #000000;
+}
+/*.status {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    margin: .3em 0 0 .5em;
+}*/
+.buttons {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    margin: 0 .5em 0 0;
+}
+.hb-button {
+    background: rgb(255, 253, 130);
+    color: rgba(88, 0, 157, .9);
+    border: none;
+    box-shadow: -.08em .08em #ffffff;
+    border-radius: .5em;
+    padding: .3em .5em .3em .5em;
+    margin: .5em;
+    font-size: .5em;
+}
+.hb-button:hover {
+    box-shadow: none;
+    transform: translate(-1px, 1px);
+    background: rgba(226, 225, 111, .9);
+}
+.facebook, .instagram, .twitter {
+    width: 2em;
+    min-width: 2em;
+}
+.donate, .watch {
+    font-weight: bold;
+    font-family: 'Gugi', sans-serif;
+}
+.watch > .fab {
+    font-weight: normal;
+}
+.body-container {
+    margin: 0 0 0 0;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    width: 100%;
+}
+.panel {
+    background: linear-gradient(to right,rgba(172, 80, 216, .4), rgba(88, 0, 157, .4), rgba(172, 80, 216, .4), rgba(160, 13, 173, .4),rgba(172, 80, 216, .4));
+    box-shadow: 0 0 1em #000000;
+}
+.large-pnl {
+    flex: 2;
+    margin: .5em .25em .5em 0;
+    max-width: 65%;
+}
+.title-bar {
+    margin: -.3em .5em 0 .3em;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 6em;
+    font-style: italic;
+    text-shadow: rgba(218, 142, 255, .5) .1em .1em;
+    position: relative;
+    z-index: 2;
+}
+.video-chat-box {
+    margin-right: 1em;
+}
+iframe {
+    margin: -1em 2em 2em 2em;
+    box-shadow: 0 0 2em rgb(0, 255, 255), inset 0 0 2em rgb(0, 255, 255);
+}
+.schedule {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .5em .5em .5em;
+}
+.schedule-cont {
+    list-style: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin: 0 .5em 0 .5em;
+} 
+.schedule-cont > div {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 0 .25em 0 .25em;
+}
+.day {
+    color: #00B6FF;
+    font-size: 1.5rem;
+    background: #FFFD82;
+    border-radius: 1em;
+    /*padding: 0 1em 0 1em;*/
+}
+/*.time {
+    padding: 0 1.5em 0 1.5em;
+}*/
+.small-pnl {
+    flex: 1;
+    margin: .5em 0 .5em .25em;
+    display: flex;
+    flex-direction: column;
+    max-width: 35%;
+}
+.right-body {
+    max-height: 32em;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.img-cartoon {
+    position: relative;
+    margin: 0 .5em 0 .5em;
+    flex: 1;
+    height: auto;
+    max-height: 30em;
+    max-width: 99%;
+}
+.about-section {
+    flex: 1;
+    margin: 0 1.5em 1.5em 0;
+    max-height: 21em;
+}
+.about-content {
+    margin: 0 1em 1em 2.25em;
+    font-size: 1.3vw;
+    /*word-wrap: wrap;*/
+}
+p {
+    margin: 0;
+    color: rgb(255, 253, 130);
+    letter-spacing: 1px;
+    text-shadow: -.08em .08em rgb(88, 0, 157);
+}
+.full-pnl {
+    display: flex;
+    margin: 0 0 0 0;
+    flex-direction: row;
+    width: 100%;
+}
+.full-left, .full-right {
+    flex: 1;
+    justify-content: flex-start;
+    margin: 1em;
+}
+.heading {
+    color: #FFFD82;
+    text-shadow: -.08em .08em rgb(88, 0, 157);
+    margin: 0 0 0 .5em;
+    /*font-size: 2.5em;*/
+    font-size: 2.5vw;
+}
+/*.third-left > ul:nth-child(1) {
+    color: #ffffff;
+    word-wrap: none;
+    font-size: 1.5em;
+}
+.third-left > ul {
+    word-wrap: none;
+    color: #ffffff;
+    font-size: 1.5em;
+}*/
+.games-played-list, .future-playthroughs-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    max-height: 15em;
+}
+.multi-tile {
+    display: flex;
+    flex-direction: column;
+}
+.founders-clips {
+    display: flex;
+    flex-direction: row;
+}
+.founders-section, .clips-section {
+    margin: 1em 0 1em 1em;
+    flex: 1;
+}
+.founders-section > .sub-heading {
+    margin: 0 .3em 0 1em;
+    font-size: 1.7vw;
+    color: #00B6FF;
+    text-shadow: -.08em .08em rgb(88, 0, 157);
+}
+.founders-section > ul {
+    list-style: decimal;
+    font-size: 1.7vw;
+    margin: .5em 0 0 .2em;
+}
+.twitch-clip {
+    margin-top: 1em;
+}
+/*Animation Coming Soon*/
+
+
+.social-fb {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    margin: 1em;
+}
+.fb {
+    margin: 1em;
+}
+.footer-bar {
+    background: linear-gradient(to right,rgba(172, 80, 216, .4), rgba(88, 0, 157, .4), rgba(172, 80, 216, .4), rgba(160, 13, 173, .4),rgba(172, 80, 216, .4));
+    margin: 0 0 .25em 0;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-shadow: rgba(218, 142, 255, .5) .1em .1em;
+    box-shadow: 0 0 1em #000000;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    margin: 1em 1em 1em 1em;
+}
+.contact > .heading {
+    margin: 0 1em 0 0;
+}
+.contact-content > b {
+    color: rgb(255, 253, 130);
+    letter-spacing: 1px;
+    text-shadow: -.08em .08em rgb(88, 0, 157);
+    font-size: 1rem;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    background: #55286F;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #FFFD82;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+@media screen and (max-width: 600px) {   
+    .about-content {
+        max-height: 2em;
+    }
+    .right-body {
+        max-height: 15em;
+        max-width: 10em;
+    }
+    .img-cartoon {
+        max-width: 10em;
+        max-height: 14em;
+    }
+}

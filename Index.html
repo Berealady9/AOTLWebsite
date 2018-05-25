@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="EmoteLoveSM.png" />
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Gugi|Ubuntu" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <title>AttackOfTheLady</title>
+</head>
+<body>
+    <div class="header-bar">
+        <!--<div class="status">
+            <a href="http://twitch.tv/AttackOfTheLady"><img src="http://streambadge.com/twitch/dark/AttackOfTheLady.png" width="300" height="64" alt="AttackOfTheLady's Streambadge"></a>
+        </div>-->
+        <div class="buttons">
+            <button href="https://streamlabs.com/attackofthelady" class="hb-button donate"><i class="fas fa-donate"></i>&nbsp;DONATE</button>
+            <button href="https://www.facebook.com/AttackOfTheLady/" class="hb-button facebook"><i class="fab fa-facebook-f"></i></button>
+            <button href="https://twitter.com/AttackOfTheLady" class="hb-button twitter"><i class="fab fa-twitter"></i></button>
+            <button href="https://www.instagram.com/attackofthelady/" class="hb-button instagram"><i class="fab fa-instagram"></i></button>
+            <button href="https://discord.gg/A2KSzwp" class="hb-button discord"><i class="fab fa-discord"></i></button>
+            <button href="https://www.twitch.tv/attackofthelady" class="hb-button watch"><i class="fab fa-twitch"></i>&nbsp;WATCH</button>
+        </div>
+    </div>
+    <div class="body-container">
+        <!--Contains title, video and chat windows-->
+        <div class="panel large-pnl">
+            <div class="title-bar">AttackOfTheLady</div>
+            <!-- Add a placeholder for the Twitch embed -->
+            <div id="twitch-embed"></div>
+            <!-- Load the Twitch embed script -->
+            <div class="video-chat-box">
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element -->
+                <!-- Original size - width: 854, height: 480 -->
+                <script type="text/javascript">
+                    new Twitch.Embed("twitch-embed", {
+                    width: "94%",
+                    height: 490,
+                    channel: "attackofthelady"
+                    });
+                </script>
+            </div>
+                <div class="heading">Stream Schedule</div>
+                <div class="schedule">
+                    <div class="schedule-cont day">
+                        <div>Monday</div>
+                        <div>Tuesday</div>
+                        <div>Wednesday</div>
+                        <div>Thursday</div>
+                        <div>Friday</div>
+                    </div>
+                    <div class="schedule-cont time">
+                        <div>9pm</div>
+                        <div>9pm</div>
+                        <div>9pm</div>
+                        <div>9pm</div>
+                        <div>9pm</div>
+                    </div>
+                </div>
+        </div>
+        <!--Contains about-me section-->
+        <div class="panel small-pnl">
+            <div class="right-body">
+                <img class="img-cartoon" src="ATOLCartoon.png" alt="AttackOfTheLady">
+            </div>
+            <div class="about-section">
+                <div class="heading">About Me</div>
+                <div class="about-content">
+                    My name is Danielle and I live in Tennessee with my dog (Maya), dwarf rabbit (Cocoa, who appears on stream from time to time), and a hermit crab (Kevin).
+                    Some of my favorites games include Resident Evil 2 & 4, the Splinter Cell series, Titanfall 2, the Onimusha series, P.T., and Mega Man X.
+                    When I'm not gaming, I work in web and UI design, paint, garden, and binge-watch Star Trek.
+                    <br>
+                    <p>Started streaming: March 2018</p>
+                </div>
+                <!--<div class="heading">Contact</div>
+                <div class="contact-content">
+                    Please send inquiries to 
+                    <b>attackofthelady@gmail.com</b>.
+                    <br>
+                    I would love to hear from you!
+                </div>-->
+            </div>
+        </div>
+    </div>
+    <div class="panel full-pnl">
+        <div class="full-left">
+            <div class="heading"><i class="fas fa-gamepad"></i>&nbsp;Games Played On Stream</div>
+            <div class="games-played-list">
+                <ul>
+                    <li>Resident Evil 4 (Normal Mode)</li>
+                    <li>Battlerite</li>
+                    <li>Fortnite</li>
+                    <li>Titanfall 2</li>
+                    <li>Cry Of Fear</li>
+                </ul>
+                <ul>
+                    <li>Doom (2016)</li>
+                    <li>Left 4 Dead</li>
+                    <li>Left 4 Dead 2</li>
+                    <li>Resident Evil 4 (Professional Mode)</li>
+                    <li>Getting Over It With Bennett Foddy</li>
+                </ul>
+                <ul>
+                    <li>The Forest</li>
+                    <li>Bendy and the Ink Machine</li>
+                    <li>Alien: Isolation</li>
+                    <li>The Night Ripper</li>
+                    <li>Resident Evil: Revelations 2</li>
+                </ul>
+            </div>
+        </div>   
+        <div class="full-right">
+            <div class="heading"><i class="fas fa-gamepad"></i>&nbsp;Future Playthroughs</div>
+            <div class="future-playthroughs-list">
+                <ul>
+                    <li>SOMA</li>
+                    <li>Doom (UltraViolence Mode)</li>
+                    <li>Resident Evil 5</li>
+                    <li>Duck Season (Horror Version)</li>
+                    <li>What Remains of Edith Finch</li>
+                </ul>
+                <ul>
+                    <li>Pony Island</li>
+                    <li>Five Nights at Freddy's</li>
+                    <li>Dead Space 2</li>
+                    <li>Mortal Kombat X</li>
+                    <li>Outlast</li>
+                </ul>
+            </div>
+        </div>  
+    </div>
+    <div class="body-container">
+        <div class="panel large-pnl multi-tile">
+            <div class="founders-clips">
+                <div class="founders-section">
+                    <div class="heading">Channel Founders</div>
+                    <div class="sub-heading">First Subs To The Channel</div>
+                    <ul>
+                        <li>WarlockKimice</li>
+                        <li>marvinacme</li>
+                        <li>CZARSALESMAN</li>
+                        <li>desol733</li>
+                        <li>Valotho</li>
+                        <li>Antiprojektz</li>
+                        <li>taalix</li>
+                        <li>DaftDrdrew</li>
+                    </ul>
+                </div>
+                <div class="clips-section">
+                    <div class="heading">Lady's Favorite Clips</div>
+                    <iframe 
+                        class="twitch-clip"
+                        src="https://clips.twitch.tv/embed?clip=GlutenFreeVenomousRedpandaSSSsss"
+                        height="260"
+                        width="340"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen="true">
+                    </iframe>
+                </div> 
+            </div>
+            <!--Animation Coming Soon-->
+        </div>
+        <div class="panel small-pnl">
+            <div class="social-fb">
+                <iframe class="fb" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAttackOfTheLady%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+            </div>   
+        </div>
+    </div>
+    <div class="body-container">
+        <div class="footer-bar">
+            <div class="contact">
+                <div class="heading">Contact</div>
+                <div class="contact-content">Please send inquiries to <b>attackofthelady@gmail.com</b>. I would love to hear from you!</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
