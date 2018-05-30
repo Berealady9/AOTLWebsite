@@ -79,7 +79,8 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 6em;
+    /*font-size: 6em;*/
+    font-size: 9vw;
     font-style: italic;
     text-shadow: rgba(218, 142, 255, .5) .1em .1em;
     position: relative;
@@ -95,7 +96,7 @@ iframe {
 .schedule {
     display: flex;
     flex-direction: column;
-    margin: 0 .5em .5em .5em;
+    margin: 0 .5em 1em .5em;
 }
 .schedule-cont {
     list-style: none;
@@ -113,14 +114,15 @@ iframe {
 }
 .day {
     color: #00B6FF;
-    font-size: 1.5rem;
+    font-size: 1.8vw;
     background: #FFFD82;
     border-radius: 1em;
     /*padding: 0 1em 0 1em;*/
 }
-/*.time {
-    padding: 0 1.5em 0 1.5em;
-}*/
+.time {
+    font-size: 1.8vw;
+    /*padding: 0 1.5em 0 1.5em;*/
+}
 .small-pnl {
     flex: 1;
     margin: .5em 0 .5em .25em;
@@ -139,9 +141,12 @@ iframe {
     position: relative;
     margin: 0 .5em 0 .5em;
     flex: 1;
+    max-width: 100%;
     height: auto;
+    max-height: 28em;
+    /*height: auto;
     max-height: 30em;
-    max-width: 99%;
+    max-width: 99%;*/
 }
 .about-section {
     flex: 1;
@@ -151,6 +156,7 @@ iframe {
 .about-content {
     margin: 0 1em 1em 2.25em;
     font-size: 1.3vw;
+    height: 15em;
     /*word-wrap: wrap;*/
 }
 p {
@@ -162,10 +168,10 @@ p {
 .full-pnl {
     display: flex;
     margin: 0 0 0 0;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
-.full-left, .full-right {
+.full-top, .full-bottom {
     flex: 1;
     justify-content: flex-start;
     margin: 1em;
@@ -202,22 +208,28 @@ p {
     flex-direction: row;
 }
 .founders-section, .clips-section {
-    margin: 1em 0 1em 1em;
+    margin: 1em 1em 1em 1em;
     flex: 1;
-}
+} 
 .founders-section > .sub-heading {
     margin: 0 .3em 0 1em;
     font-size: 1.7vw;
     color: #00B6FF;
     text-shadow: -.08em .08em rgb(88, 0, 157);
 }
-.founders-section > ul {
+.founders-section > ul > li {
     list-style: decimal;
-    font-size: 1.7vw;
+    font-size: 1.75vw;
     margin: .5em 0 0 .2em;
 }
+.clips-section > .heading {
+    margin: 0 0 0 -.5em;
+}
 .twitch-clip {
-    margin-top: 1em;
+    margin: 1em .5em .5em -.3em;
+    height: auto;
+    min-height: 15em;
+    width: auto;
 }
 /*Animation Coming Soon*/
 
@@ -227,6 +239,8 @@ p {
     flex: 1;
     justify-content: center;
     margin: 1em;
+    height: auto;
+    width: auto;
 }
 .fb {
     margin: 1em;
@@ -253,11 +267,15 @@ p {
 .contact > .heading {
     margin: 0 1em 0 0;
 }
-.contact-content > b {
+.contact-content {
+    font-size: 1.2rem;
+}
+.contact-content > a {
+    text-decoration: none;
     color: rgb(255, 253, 130);
     letter-spacing: 1px;
     text-shadow: -.08em .08em rgb(88, 0, 157);
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 ::-webkit-scrollbar {
