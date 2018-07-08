@@ -18,37 +18,44 @@ body {
     text-shadow: rgba(218, 142, 255, .5) .1em .1em;
     box-shadow: 0 0 1em #000000;
 }
+/*Online/Offline Status Indicator*/
 /*.status {
     display: flex;
     flex: 1;
     justify-content: flex-start;
     margin: .3em 0 0 .5em;
 }*/
+/*Buttons appearing in the header*/
 .buttons {
     display: flex;
     flex: 1;
     justify-content: flex-end;
     margin: 0 .5em 0 0;
 }
+/*"Header bar" button styling*/
 .hb-button {
     background: rgb(255, 253, 130);
     color: rgba(88, 0, 157, .9);
     border: none;
+    cursor: pointer;
     box-shadow: -.08em .08em #ffffff;
     border-radius: .5em;
     padding: .3em .5em .3em .5em;
     margin: .5em;
     font-size: .5em;
 }
+/*Hover state for hb-button changes color and shadow slightly*/
 .hb-button:hover {
     box-shadow: none;
     transform: translate(-1px, 1px);
     background: rgba(226, 225, 111, .9);
 }
+/*Defined widths for specific social buttons*/
 .facebook, .instagram, .twitter {
     width: 2em;
     min-width: 2em;
 }
+/*Specific fonts for buttons with text*/
 .donate, .watch {
     font-weight: bold;
     font-family: 'Gugi', sans-serif;
@@ -56,22 +63,27 @@ body {
 .watch > .fab {
     font-weight: normal;
 }
+/*Container holding all panels except header and footer*/
 .body-container {
     margin: 0 0 0 0;
     display: flex;
     flex: 1;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
 }
+/*General panel styles - Adds a little color to transparent panels*/
 .panel {
     background: linear-gradient(to right,rgba(172, 80, 216, .4), rgba(88, 0, 157, .4), rgba(172, 80, 216, .4), rgba(160, 13, 173, .4),rgba(172, 80, 216, .4));
     box-shadow: 0 0 1em #000000;
 }
-.large-pnl {
-    flex: 2;
-    margin: .5em .25em .5em 0;
-    max-width: 65%;
+/*Large transparent flex panels containing info, videos, etc*/
+.full-pnl {
+    display: flex;
+    margin: .5em 0 0 0;
+    flex-direction: column;
+    width: 100%;
 }
+/*"AttackOfTheLady" Heading*/
 .title-bar {
     margin: -.3em .5em 0 .3em;
     height: 2em;
@@ -85,19 +97,26 @@ body {
     text-shadow: rgba(218, 142, 255, .5) .1em .1em;
     position: relative;
     z-index: 2;
-}
-.video-chat-box {
-    margin-right: 1em;
-}
-iframe {
+}/*Styles for Twitch Video and chat embed*/
+#twitch-embed > iframe {
     margin: -1em 2em 2em 2em;
     box-shadow: 0 0 2em rgb(0, 255, 255), inset 0 0 2em rgb(0, 255, 255);
 }
+/*Styles all headings*/
+.heading {
+    color: #FFFD82;
+    text-shadow: -.08em .08em rgb(88, 0, 157);
+    margin: 0 0 0 .5em;
+    /*font-size: 2.5em;*/
+    font-size: 2.5vw;
+}
+/*Div containing the schedule info - arranges contents in column flex format*/
 .schedule {
     display: flex;
     flex-direction: column;
-    margin: 0 .5em 1em .5em;
+    margin: 0 .5em 2em .5em;
 }
+/*Holds days of the week and changes font color of times to white*/
 .schedule-cont {
     list-style: none;
     font-size: 1.5em;
@@ -105,13 +124,15 @@ iframe {
     display: flex;
     flex-direction: row;
     margin: 0 .5em 0 .5em;
-} 
+}
+/*All divs in schedule-cont flex aligned center with margins*/
 .schedule-cont > div {
     display: flex;
     flex: 1;
     justify-content: center;
     margin: 0 .25em 0 .25em;
 }
+/*Styles day info*/
 .day {
     color: #00B6FF;
     font-size: 1.8vw;
@@ -119,24 +140,24 @@ iframe {
     border-radius: 1em;
     /*padding: 0 1em 0 1em;*/
 }
+/*Styles time info*/
 .time {
     font-size: 1.8vw;
     /*padding: 0 1.5em 0 1.5em;*/
 }
-.small-pnl {
-    flex: 1;
-    margin: .5em 0 .5em .25em;
-    display: flex;
-    flex-direction: column;
-    max-width: 35%;
-}
-.right-body {
-    max-height: 32em;
-    margin: 1.5em;
+/*Div that arranges contents in row format instead of default column format*/
+.arrange-row {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
 }
+/*Container holding the AOTL logo, restricting its position and size*/
+.cartoon-container {
+    display: flex;
+    margin: 2em;
+    max-height: 30em;
+    max-width: 23em;
+}
+/*Styles for the ATOL logo*/
 .img-cartoon {
     position: relative;
     margin: 0 .5em 0 .5em;
@@ -148,106 +169,264 @@ iframe {
     max-height: 30em;
     max-width: 99%;*/
 }
+/*Container holding the "About Me" title and info*/
 .about-section {
     flex: 1;
-    margin: 0 1.5em 1.5em 0;
+    margin: 2em 2em 2em 2em;
     max-height: 21em;
 }
+.about-section > .heading {
+    margin: 0 0 0 -.2em;
+}
+/*Styles the "About Me" info*/
 .about-content {
-    margin: 0 1em 1em 2.25em;
+    margin: 0;
     font-size: 1.3vw;
     height: 15em;
     /*word-wrap: wrap;*/
 }
+/*Style for "Started Streaming" text in About Me section*/
 p {
     margin: 0;
     color: rgb(255, 253, 130);
     letter-spacing: 1px;
     text-shadow: -.08em .08em rgb(88, 0, 157);
 }
-.full-pnl {
+.center-all {
     display: flex;
-    margin: 0 0 0 0;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
 }
-.full-top, .full-bottom {
-    flex: 1;
-    justify-content: flex-start;
-    margin: 1em;
-}
-.heading {
-    color: #FFFD82;
-    text-shadow: -.08em .08em rgb(88, 0, 157);
-    margin: 0 0 0 .5em;
-    /*font-size: 2.5em;*/
-    font-size: 2.5vw;
-}
-/*.third-left > ul:nth-child(1) {
-    color: #ffffff;
-    word-wrap: none;
-    font-size: 1.5em;
-}
-.third-left > ul {
-    word-wrap: none;
-    color: #ffffff;
-    font-size: 1.5em;
-}*/
+/*Games Played and Future Playthroughs list style*/
 .games-played-list, .future-playthroughs-list {
     display: flex;
     flex-direction: row;
     font-size: 1rem;
-    max-height: 15em;
+    /*max-height: 15em;*/
 }
-.multi-tile {
+/*Container holding the expand button*/
+.exp-button {
     display: flex;
-    flex-direction: column;
+    flex: 1;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin: 0 0 0 1em;
 }
-.founders-clips {
+/*---------------------------------------------------------------------------------------------------------------*/
+/*------------------Games Played Section Styles-------------------*/
+/*holds all info in the "games played" section*/
+.wrapper {
+    width: 900px;
+    margin: 2em auto;
+}
+/*holds heading and list info in the "games played" section*/
+.list-wrapper {
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-height: 150px;
+    overflow: hidden;
+    border-left: .8em solid #00B6FF;
+    border-right: .8em solid #00B6FF;
+    padding: 0 1em;
+}
+/*hides more-info button unless the info list exceeds the area (it basically always will)*/
+.more-info {
+    display: none;
+}
+/*toggles between "more" and "less" text on more-info button, depending on the state*/
+.more-info .less,
+.more-info.expand .more {
+  display: none;
+}
+.more-info.expand .less {
+  display: inline;
+}
+/*Styles for the more info button*/
+.more-info {
+    background: rgb(255, 253, 130);
+    color: rgba(88, 0, 157, .9);
+    border: none;
+    cursor: pointer;
+    box-shadow: -.08em .08em #ffffff;
+    border-radius: .5em;
+    margin: .5em .5em 2em .5em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Gugi', sans-serif;
+    padding: 1em;
+}
+/*Hover state for more info button*/
+.more-info:hover {
+    box-shadow: none;
+    transform: translate(-1px, 1px);
+    background: rgba(226, 225, 111, .9);
+}
+/*adds margin to either side of the more and less button span*/
+.more, .less {
+    margin: 0 2em 0 2em;
+}
+/*---------------------End Games Played Section-----------------------*/
+/*------------------Future Playthroughs Section Styles-------------------*/
+/*holds all info in the "future playthroughs" section*/
+.wrapper2 {
+    width: 900px;
+    margin: 2em auto;
+}
+/*holds heading and list info in the "future playthroughs" section*/
+.list-wrapper2 {
+    margin: 0 auto;
+    margin-bottom: 0;
+    max-height: 150px;
+    overflow: hidden;
+    border-left: .8em solid #00B6FF;
+    border-right: .8em solid #00B6FF;
+    padding: 0 1em;
+}
+/*hides more-info2 button unless the info list exceeds the area (it basically always will)*/
+.more-info2 {
+    display: none;
+}
+/*toggles between "more2" and "less2" text on more-info2 button, depending on the state*/
+.more-info2 .less2,
+.more-info2.expand2 .more2 {
+  display: none;
+}
+.more-info2.expand2 .less2 {
+  display: inline;
+}
+/*Styles for the more info button*/
+.more-info2 {
+    background: rgb(255, 253, 130);
+    color: rgba(88, 0, 157, .9);
+    border: none;
+    cursor: pointer;
+    box-shadow: -.08em .08em #ffffff;
+    border-radius: .5em;
+    margin: .5em .5em 2em .5em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Gugi', sans-serif;
+    padding: 1em;
+}
+/*Hover state for more info button*/
+.more-info2:hover {
+    box-shadow: none;
+    transform: translate(-1px, 1px);
+    background: rgba(226, 225, 111, .9);
+}
+/*adds margin to either side of the more2 and less2 button span*/
+.more2, .less2 {
+    margin: 0 2em 0 2em;
+}
+/*-------------End Future Playthroughs Section--------------------/*
+/*adds a margin to the top and bottom of the clips section as a whole*/
+.clips-section {
+    margin: 2em 0 2em 0;
+}
+/*styles the heading of the clips section specifically*/
+.clips-section > .heading {
+    text-align: center;
+}
+/*section containing all embedded clips, arranging them center with the option to flex wrap*/
+.clips {
+    margin: 1em 1em 1em 1em;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+} 
+/*gives each clip a small margin to push them apart slightly*/
+.clips > iframe {
+    margin: .5em;
+}
+/*adds alternating halo colors to each embedded clip in the clips section*/
+.clips > iframe:nth-child(even) {
+    box-shadow: 0 0 2em rgb(0, 255, 255), inset 0 0 2em rgb(0, 255, 255);
+}
+.clips > iframe:nth-child(odd) {
+    box-shadow: 0 0 2em rgb(226, 225, 111), inset 0 0 2em rgb(226, 225, 111);
+}
+/*styles soecifically for the social media header*/
+.social-hd {
+    text-align: center;
+    margin: 1em 1em 0 1em;
+}
+/*invisible section that arranges all social panels in row format with the option to flex wrap*/
+.social {
     display: flex;
     flex-direction: row;
+    margin: 1em;
+    flex-wrap: wrap;
 }
-.founders-section, .clips-section {
-    margin: 1em 1em 1em 1em;
+/*invisible section holding the facebook embed*/
+.social-fb {
     flex: 1;
-} 
+    margin: 2em;
+}
+/*adds halo to the embeeded facebook iframe*/
+.social-fb > iframe {
+    box-shadow: 0 0 2em rgb(0, 255, 255), inset 0 0 2em rgb(0, 255, 255);
+}
+/*invisible section holding the twitter embed*/
+.social-twitter {
+    flex: 1;
+    margin: 2em;
+}
+/*adds halo to the embedded twitter iframe*/
+.social-twitter > iframe {
+    box-shadow: 0 0 2em rgb(226, 225, 111), inset 0 0 2em rgb(226, 225, 111);
+}
+/*invisible section holding the instagram embed*/
+.social-insta {
+    flex: 1;
+    margin: 2em;
+}
+/*adds halo to the embedded instagram iframe*/
+.social-insta > iframe {
+    box-shadow: 0 0 2em rgb(0, 255, 255), inset 0 0 2em rgb(0, 255, 255) !important;
+}
+/*specific styles for the channel founders section heading*/
+.founders-section > .founders {
+    margin: 1em 1em 0 1em;
+    text-align: center;
+}
+/*sub heading for the channel founders section*/
 .founders-section > .sub-heading {
     margin: 0 .3em 0 1em;
     font-size: 1.7vw;
+    text-align: center;
     color: #00B6FF;
     text-shadow: -.08em .08em rgb(88, 0, 157);
 }
-.founders-section > ul > li {
-    list-style: decimal;
-    font-size: 1.75vw;
-    margin: .5em 0 0 .2em;
-}
-.clips-section > .heading {
-    margin: 0 0 0 -.5em;
-}
-.twitch-clip {
-    margin: 1em .5em .5em -.3em;
-    height: auto;
-    min-height: 15em;
-    width: auto;
-}
-/*Animation Coming Soon*/
-
-
-.social-fb {
+/*invisible container holding all usernames of "first subs"*/
+.subs {
     display: flex;
-    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    margin: 1em;
-    height: auto;
-    width: auto;
+    margin: .5em .5em 2em .5em;
 }
-.fb {
-    margin: 1em;
+/*each username for all 10 "first subs"*/
+.subs > p {
+    font-size: 1.75vw;
+    margin: .5em;
 }
+/*alternates styles for "first subs" listed*/
+.subs > p:nth-child(even) {
+    color: #FFFD82;
+    background: #00B6FF;
+    border-radius: .5em;
+    padding: 0 .5em;
+}
+.subs > p:nth-child(odd) {
+    color: #00B6FF;
+    background: #FFFD82;
+    border-radius: .5em;
+    padding: 0 .5em;
+}
+/*Footer Bar styles - contains contact email and "to top" button*/
 .footer-bar {
     background: linear-gradient(to right,rgba(172, 80, 216, .4), rgba(88, 0, 157, .4), rgba(172, 80, 216, .4), rgba(160, 13, 173, .4),rgba(172, 80, 216, .4));
-    margin: 0 0 .25em 0;
+    margin: .5em 0 .25em 0;
     height: auto;
     width: 100%;
     display: flex;
@@ -256,20 +435,24 @@ p {
     text-shadow: rgba(218, 142, 255, .5) .1em .1em;
     box-shadow: 0 0 1em #000000;
 }
+/*flexible container holding contact heading and info*/
 .contact {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     flex: 1;
-    margin: 1em 1em 1em 1em;
+    margin: 2em 1em 3em 1em;
 }
+/*Styles for contact heading specifically*/
 .contact > .heading {
     margin: 0 1em 0 0;
 }
+/*contact info style*/
 .contact-content {
     font-size: 1.2rem;
 }
+/*contact info email link style*/
 .contact-content > a {
     text-decoration: none;
     color: rgb(255, 253, 130);
@@ -277,22 +460,48 @@ p {
     text-shadow: -.08em .08em rgb(88, 0, 157);
     font-size: 1.2rem;
 }
+/*Go To Top Of Page Button*/
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    cursor: pointer;
+    background: rgb(255, 253, 130);
+    color: rgba(88, 0, 157, .9);
+    border: none;
+    box-shadow: -.08em .08em #ffffff;
+    border-radius: .5em;
+    padding: .3em .5em .3em .5em;
+    margin: .5em;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Gugi', sans-serif;
+}
+/*Hover state for top-button changes color and shadow slightly*/
+#topBtn:hover {
+    box-shadow: none;
+    transform: translate(-1px, 1px);
+    background: rgba(226, 225, 111, .9);
+}
 
+/*Custom Scrollbar Styles*/
 ::-webkit-scrollbar {
     width: 1em;
     background: #55286F;
 }
- 
 ::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
     border-radius: 10px;
 }
- 
 ::-webkit-scrollbar-thumb {
     background: #FFFD82;
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
 }
+
+
 
 @media screen and (max-width: 600px) {   
     .about-content {
