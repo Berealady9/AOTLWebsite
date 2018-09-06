@@ -75,3 +75,15 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+//Login Page - Move to separate JS file
+function checkAdminLogin() {
+  var loginForm = document.getElementById('adminLogin');
+  console.log("Did it!");
+  if (loginForm.userid.value == "myuserid" && loginForm.pswrd.value == "mypassword") {
+    window.open('admin.html');
+  }
+  else {
+    alert("Whoops! Username or Password is Incorrect");
+  }
+}

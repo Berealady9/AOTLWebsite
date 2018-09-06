@@ -516,3 +516,73 @@ p {
         max-height: 14em;
     }
 }
+
+/*Login Page Styles*/
+.login-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+.login-info {
+    display: flex;
+    flex-direction: column;
+    min-height: 20em;
+    min-width: 30em;
+}
+.login-hd {
+    display: flex;
+    justify-content: center;
+    margin: .5em;
+}
+.arrange-col {
+    display: flex;
+    flex-direction: column;
+}
+.username, .password {
+    font-size: 1.3em;
+    border: .2em solid #55286F;
+    margin: .5em;
+    border-radius: .5em;
+    padding: .3em;
+    width: 22em;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.login-btn {
+    width: 100%;
+    margin: .5em;
+    font-size: 1.5em;
+    font-family: 'Gugi', sans-serif;
+}
+
+/*Admin Edit Page Styles*/
+.edit-pnl {
+    margin: 1em .5em 1em .5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.edit-group {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+.edit-box {
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 30em;
+}
+.edit-btn {
+    width: 100%;
+    margin: .5em;
+    font-size: 1.5em;
+    font-family: 'Gugi', sans-serif;
+}
