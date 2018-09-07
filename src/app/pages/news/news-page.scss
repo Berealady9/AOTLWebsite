@@ -1,0 +1,124 @@
+.page {
+  display: flex;
+  flex-direction: row;
+}
+.news-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+    height: 100%;
+    overflow-y: hidden;
+  }
+  .news-scroll {
+    overflow-y: auto;
+    max-height: 85%;
+    margin: 2em 1em 2em 1em;
+  }
+  .news-container > div > div {
+    display: flex;
+    flex-direction: column;
+    margin: 1.2vw 2vw;
+    flex: 1;
+    background: rgba(235, 209, 254, .1);
+    box-shadow: 0 0 .5em rgba(235, 209, 254, .6);
+    border-radius: 1em;
+    padding: .5em 1em 1.5em 1em;
+    min-width: 80%; 
+    overflow-x: hidden;
+  }
+  .news-header {
+    font-family: 'Jura', cursive;
+    font-size: 1.5vw;
+    color: #EA3788;
+    text-shadow: .02em .01em 0 rgb(247, 121, 178);
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .2em;
+    text-align: left;
+  }
+  .underline {
+    padding: 0;
+    min-height: 4px;
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(to right, #FFFD82 70%, transparent 100%);
+    margin: 0 0 .5em 0;
+  }
+  .news-subheader {
+    font-family: 'Jura', sans-serif;
+    font-size: 1.2vw;
+    color: #FFFD82;
+    font-weight: bold;
+    margin-top: 0;
+    text-align: left;
+  }
+  /*This will change when the poll element is added*/
+  .news-text-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin-top: 0;
+    font-family: 'Jura', sans-serif;
+  }
+  @media only screen and (max-width: 1025px) {
+    .news-container > div > div {
+      border-radius: .9em;
+    }
+    .underline {
+      min-height: 3px; 
+      height: 3px;
+    }
+  }
+  @media only screen and (max-width: 770px) {
+    .news-container > div > div {
+      border-radius: .8em;
+    }
+  }
+  @media only screen and (max-width: 430px) {
+    .news-header {
+      font-size: 1.9vw;
+    }
+    .underline {
+      min-height: 2px;
+      height: 2px;
+      margin-bottom: .3em;
+    }
+    .news-subheader {
+      font-size: 1.5vw;
+    }
+    .news-text-container {
+      font-size: 1.6vw;
+    }
+    .news-container > div > div {
+      margin-top: .4em;
+      margin-bottom: .4em;
+      padding: .3em .8em 1.1em .8em;
+      border-radius: .7em;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .news-header {
+      font-size: 2vw;
+    }
+    .underline {
+      min-height: 2px;
+      height: 2px;
+      margin-bottom: .3em;
+    }
+    .news-subheader {
+      font-size: 1.6vw;
+    }
+    .news-text-container {
+      font-size: 1.7vw;
+    }
+    .news-container > div > div {
+      margin-top: .4em;
+      margin-bottom: .4em;
+      padding: .3em .8em 1em .8em;
+      border-radius: .5em;
+    }
+  }

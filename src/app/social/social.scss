@@ -1,0 +1,120 @@
+  .social {
+    height: auto;
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin: .3em;
+    /*z-index: 5;*/
+  }
+  .social li {
+    display:inline-block; 
+    margin: .3em 4px;
+  }
+  .social i  {
+    font-size: 24px;
+    height: 64px;
+    line-height: 64px;
+    text-align: center;
+    width: 64px;
+    border-radius: 100%;
+    color:#fff;
+    box-shadow: inset 0 0 0 1px #d7d7d7;
+    position: relative;
+    cursor: pointer;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+  .social i:hover, .social i:focus {    
+    color: #fff;
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.8);
+    -moz-transform: rotate(5deg) scale(1.1);
+    -ms-transform: rotate(5deg) scale(1.1);
+    -webkit-transform: rotate(5deg) scale(1.1);
+    transform: rotate(5deg) scale(1.1);
+  /*default*/
+    background-image: -webkit-linear-gradient(left, #365899 0%, #2c8cb3 100%);
+    background-image: -moz-linear-gradient(left, #365899 0%, #2c8cb3 100%);
+    background-image: -o-linear-gradient(left, #365899 0%, #2c8cb3 100%);
+    background-image: linear-gradient(to right, #365899 0%, #2c8cb3 100%);
+    background-image: -webkit-linear-gradient(90deg, #365899 0%, #2c8cb3 100%);
+    background-image: -ms-linear-gradient(90deg, #365899 0%, #2c8cb3 100%);
+  }
+  .social .fa-twitter:hover, .social .fa-twitter:focus {    
+    background-image: -webkit-linear-gradient(left, #1DA1F2 0%, #2c8cb3 100%);
+    background-image: -moz-linear-gradient(left, #1DA1F2 0%, #2c8cb3 100%);
+    background-image: -o-linear-gradient(left, #1DA1F2 0%, #2c8cb3 100%);
+    background-image: linear-gradient(to right, #1DA1F2 0%, #2c8cb3 100%);
+    background-image: -webkit-linear-gradient(90deg, #1DA1F2 0%, #2c8cb3 100%);
+    background-image: -ms-linear-gradient(90deg, #1DA1F2 0%, #2c8cb3 100%);
+  }
+  
+  .social .fa-youtube:hover, .social .fa-youtube:focus {    
+    background-image: -webkit-linear-gradient(left, #FF0000 0%, #e74c3c 100%);
+    background-image: -moz-linear-gradient(left, #FF0000 0%, #e74c3c 100%);
+    background-image: -o-linear-gradient(left, #FF0000 0%, #e74c3c 100%);
+    background-image: linear-gradient(to right, #FF0000 0%, #e74c3c 100%);
+    background-image: -webkit-linear-gradient(90deg, #FF0000 0%, #e74c3c 100%);
+    background-image: -ms-linear-gradient(90deg, #FF0000 0%, #e74c3c 100%);
+  }
+  
+  .social .fa-instagram:hover, .social .fa-instagram:focus {    
+    background-image: -webkit-linear-gradient(left, #D72A83 0%, #E46447 100%);
+    background-image: -moz-linear-gradient(left, #D72A83 0%, #E46447 100%);
+    background-image: -o-linear-gradient(left, #D72A83 0%, #E46447 100%);
+    background-image: linear-gradient(to right, #D72A83 0%, #E46447 100%);
+    background-image: -webkit-linear-gradient(90deg, #D72A83 0%, #E46447 100%);
+    background-image: -ms-linear-gradient(90deg, #D72A83 0%, #E46447 100%);
+  }
+  .social .fa-discord:hover, .social .fa-discord:focus {    
+    background-image: -webkit-linear-gradient(left, #7289D9 0%, #2c8cb3 100%);
+    background-image: -moz-linear-gradient(left, #7289D9 0%, #2c8cb3 100%);
+    background-image: -o-linear-gradient(left, #7289D9 0%, #2c8cb3 100%);
+    background-image: linear-gradient(to right, #7289D9 0%, #2c8cb3 100%);
+    background-image: -webkit-linear-gradient(90deg, #7289D9 0%, #2c8cb3 100%);
+    background-image: -ms-linear-gradient(90deg, #7289D9 0%, #2c8cb3 100%);
+  }
+  
+  @media only screen and (max-width: 2565px) {
+    .social i  {
+      font-size: 45px;
+      height: 75px;
+      line-height: 75px;
+      text-align: center;
+      width: 75px;
+      margin-left: -1.5em;
+    }
+  }
+  @media only screen and (max-width: 1445px) {
+    .social i  {
+      font-size: 25px;
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      width: 65px;
+      margin-left: -1.5em;
+    }
+  }
+  @media only screen and (max-width: 1024px) {
+    .social i {
+      font-size: 22px;
+      height: 42px;
+      line-height: 42px;
+      width: 42px;
+      margin-left: -1.5em;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .social i  {
+      font-size: 14px;
+      height: 34px;
+      line-height: 34px;
+      width: 34px;
+      margin-left: -1.5em;
+    }
+  }

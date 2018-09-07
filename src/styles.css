@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Anton|Barlow+Condensed|Gugi|Jura|Orbitron|Rock+Salt|Ubuntu');
+body {
+    margin: 0;
+    background: #000000;
+    overflow-y: hidden;
+}
+
+.body-overlay {
+    background: linear-gradient(30deg, rgba(172, 80, 216, .3), rgba(88, 0, 157, .3), rgba(172, 80, 216, .3), rgba(160, 13, 173, .3),rgba(172, 80, 216, .3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    z-index: -5;
+}
+
+/*Custom Scrollbar Styles*/
+::-webkit-scrollbar {
+    width: 1em;
+    background: #55286F;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background: #FFFD82;
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+router-outlet ~ * {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}

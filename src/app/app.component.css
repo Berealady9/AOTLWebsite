@@ -1,0 +1,123 @@
+/*Navbar Styles*/
+* {
+    box-sizing: border-box;
+  }
+  /*body {
+    margin: 0px;
+    font-family: 'Jura', sans-serif;
+    font-weight: bold;
+  }*/
+  .nav {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(29, 12, 40, .9);
+    border-bottom: 5px solid #EA3788;
+    position: relative;
+    z-index: 100;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-family: 'Anton', sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    color: #ffffff;
+    text-shadow: rgba(218, 142, 255, .5) .1em .1em;
+    padding: 10px 10px 10px 10px;
+  }
+  .nav > .nav-btn {
+    display: none;
+  }
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 25px;
+    font-family: 'Barlow Condensed', sans-serif;
+  }
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 15px 10px 15px 10px;
+    text-decoration: none;
+    color: #FFFD82;
+    transition: all 0.5s ease;
+    font-weight: bold;
+  }
+  .nav > .nav-links > a:hover {
+    background: #FFFD82;
+    color: #55286F;
+    font-weight: bold;
+  }
+  .nav > #nav-check {
+    display: none;
+  }
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 70px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover {
+      background: #55286F;
+      border-bottom: 5px solid #EA3788;
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #FFFD82;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgba(234, 55, 136, .7);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 70px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) + .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked + .nav-links {
+      height: calc(100vh - 70px);
+      overflow-y: auto;
+    }
+  }
+
+  @media only screen and (max-width: 2560px) {
+    .nav {
+      height: 75px;
+    }
+    .nav > .nav-header > .nav-title {
+      font-size: 32px;
+    }
+    .nav > .nav-links {
+      font-size: 30px;
+    }
+  }
+  @media only screen and (max-width: 1445px) {
+    .nav {
+      height: 70px;
+    }
+    .nav > .nav-header > .nav-title {
+      font-size: 32px;
+    }
+    .nav > .nav-links {
+      font-size: 25px;
+    }
+  }

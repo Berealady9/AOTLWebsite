@@ -1,0 +1,218 @@
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+  .fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .fullscreen-bg-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -99;
+    background: rgba(85, 40, 111, .5);
+  }
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+  }
+  .welcome-header {
+    text-align: center;
+    font-family: 'Rock Salt', cursive;
+    font-size: 3.5vw;
+    color: #FFFD82;
+    font-weight: bold;
+    margin: -2em 0 0 0;
+  }
+  .welcome-subheader {
+    text-align: center;
+    font-family: 'Jura', sans-serif;
+    font-size: 3vw;
+    color: #FFFD82;
+    font-weight: bold;
+    margin-top: 0;
+  }
+  .schedule-bar {
+      display: flex;
+      flex-direction: column;
+      font-family: 'Jura', sans-serif;
+      font-weight: bold;
+  }
+  .sched-bar-top {
+      flex: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background: linear-gradient(to right, transparent 0%, #FFFD82 25%, #FFFD82 75%, transparent 100%);
+      margin: 0 10em 0 10em;
+  }
+  .sched-bar-top > div {
+      min-width: 2em;
+      width: 3em;
+      max-width: 3em;
+      font-size: 2vw;
+      margin: 0 1em 0 1em;
+      color: #55286F;
+      text-align: center;
+  }
+  .sched-bar-bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sched-bar-bottom > div {
+    min-width: 2em;
+    width: 3em;
+    max-width: 3em;
+    font-size: 2vw;
+    margin: 0 1em 0 1em;
+    color: #ffffff;
+    text-align: center;
+}
+.times {
+    margin: .5em;
+    text-align: center;
+    color: #FFFD82;
+    font-size: 1vw;
+    font-family: 'Jura', sans-serif;
+}
+
+/*Used on every page except HOME*/
+.body-overlay {
+    background: linear-gradient(30deg, rgba(172, 80, 216, .3), rgba(88, 0, 157, .3), rgba(172, 80, 216, .3), rgba(160, 13, 173, .3),rgba(172, 80, 216, .3));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg__video {
+    width: 300%;
+    left: -100%;
+  }
+}
+/*@media (max-width: 767px) {
+  .fullscreen-bg__video {
+    display: none;
+  }
+}*/
+@media (max-width: 1025px) {
+  .welcome-header {
+    margin-top: -6em;
+    font-size: 1.8em;
+  }
+  .welcome-subheader {
+    font-size: 1.6em;
+  }
+  .schedule-bar > div > div {
+    font-size: 1.4em;
+  }
+  .sched-bar-top {
+    margin: 0;
+  }
+  .times {
+    font-size: 1.1em;
+  }
+}
+@media (max-width: 770px) {
+  .welcome-header {
+    margin-top: -10em;
+    font-size: 1.6em;
+  }
+  .welcome-subheader {
+    font-size: 1.4em;
+  }
+  .schedule-bar > div > div {
+    font-size: 1.2em;
+  }
+  .sched-bar-top {
+    margin: 0;
+  }
+  .times {
+    font-size: .9em;
+  }
+}
+@media (max-width: 430px) {
+  .welcome-header {
+    margin-top: -11em;
+    font-size: 1.4em;
+  }
+  .welcome-subheader {
+    font-size: 1.2em;
+  }
+  .schedule-bar > div > div {
+    font-size: .8em;
+  }
+  .sched-bar-top {
+    margin: 0;
+  }
+  .times {
+    font-size: .7em;
+  }
+}
+@media (max-width: 380px) {
+  .welcome-header {
+    margin-top: -13em;
+    font-size: 1.2em;
+  }
+  .welcome-subheader {
+    font-size: 1em;
+  }
+  .schedule-bar > div > div {
+    font-size: .8em;
+  }
+  .sched-bar-top {
+    margin: 0;
+  }
+  .times {
+    font-size: .5em;
+  }
+}
+@media (max-width: 330px) {
+  .fullscreen-bg__video {
+    display: none;
+  }
+  .welcome-header {
+    margin-top: -13em;
+    font-size: 1.2em;
+  }
+  .welcome-subheader {
+    font-size: 1em;
+  }
+  .schedule-bar > div > div {
+    font-size: .6em;
+  }
+  .sched-bar-top {
+    margin: 0;
+  }
+  .times {
+    font-size: .5em;
+  }
+}
